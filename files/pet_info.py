@@ -24,9 +24,6 @@ def pet_info_handler(event, content):
     
     response = s3_client.get_object(Bucket=bucket_name, Key=s3_key)
     print(response)
- #   print(response["Body"].decode('utf-8'))
-    # content = response["Body"].read()
-    # jsonObject = json.loads(content)
     
  
     #my_bucket = s3resource.Bucket(bucket_name)
